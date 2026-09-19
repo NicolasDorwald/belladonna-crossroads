@@ -6,32 +6,46 @@
   align-items: center;
 }
 
-.site {
-    min-height: 100vh;
-    background: #0b0a08;
-    color: #e8dfcf;
-    text-align: center;
-    padding: 40px;
-
-    display: flex;
-    flex-direction: column;
+.site-logo {
+  width: auto;
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .site-header {
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.site-header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin: 0;
+.site {
+    min-height: 100vh;
+    background-color: #000;
+    
+      background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/images/background.jpg');
+
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .wheel {
     position: relative;
     width: 280px;
-    height: 280px;
+    height: 260px;
 }
 
 .navigation {
@@ -45,32 +59,9 @@
     height: 280px;
 
     margin: 0;
-    background: rgba(153, 23, 23, 0.731);
-}
 
-.navigation button {
-    position: absolute;
-
-  width: 70px;
-  height: 70px;
-  padding: 0;
-
-  background: #17130f;
-  border: 1px solid #a58b63;
-
-  color: #e8dfcf;
-  cursor: pointer;
-
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-
-    transition: left 0.5s ease, top 0.5s ease, transform 0.3s ease; 
-}
-
-.navigation button:hover {
-  background: #a58b63;
-  color: #0b0a08;
-  transform: scale(1.05);
+    transform: translateY(-10px);
+    /* background: rgba(153, 23, 23, 0.731); */
 }
 
 .content {
@@ -81,12 +72,16 @@
 
   /* margin: 0 auto; */
   text-align: center;
-    background: rgba(74, 74, 221, 0.845);
+    /* background: rgba(74, 74, 221, 0.845); */
+
+    transform: translateY(-10px);
 }
 
 .content h2 {
   font-size: 2rem;
   letter-spacing: 0.08em;
+  color: #a58b63;
+  margin: 0;
 }
 
 .content p {
@@ -96,30 +91,30 @@
 /* ---------- navigation button positions ---------- */
 .navigation button.position-0 {
   left: 105px;
-  top: 0;
+  top: 10px;
 }
 
 .navigation button.position-1 {
   left: 210px;
-  top: 55px;
+  top: 70px;
 }
 
 .navigation button.position-2 {
   left: 210px;
-  top: 155px;
+  top: 140px;
 }
 
 .navigation button.position-3 {
   left: 105px;
-  top: 210px;
+  top: 200px;
 }
 
 .navigation button.position-4 {
   left: 0;
-  top: 155px;
+  top: 140px;
 }
 
 .navigation button.position-5 {
   left: 0;
-  top: 55px;
+  top: 70px;
 }

@@ -20,7 +20,7 @@ function App() {
     <div className="site">
 
         <header className="site-header">
-            <h1>The Belladonna Crossroads</h1>
+            <img src="/images/logo-isolate.png" alt="The Belladonna's Logo" className="site-logo" />
         </header>
 
         <div className="main-layout">
@@ -151,7 +151,7 @@ function App() {
                         className={getPosition('merch')}
                         onClick={() => setActiveSection('merch')}
                         >
-                        Shop'Oddities
+                        Shop' Oddities
                     </button>
 
                     <button
