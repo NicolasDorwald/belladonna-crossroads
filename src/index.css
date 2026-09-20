@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
+:root {
+    --black: #090807;
+    --black-soft: #11100e;
+    --burnt-orange: #a95727;
+    --orange-light: #c8783b;
+    --ochre: #b18a50;
+    --aged-gold: #9b7945;
+    --sick-green: #38432d;
+    --text: #d5c5a2;
+}
+
 * {
   box-sizing: border-box;
 }

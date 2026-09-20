@@ -1,7 +1,7 @@
 .navigation button {
     position: absolute;
 
-  width: 6rem;
+  width: 7rem;
   height: 50px;
   padding: .6rem;
 
@@ -34,21 +34,21 @@
     transform 0.3s ease;
 
     background:
-  radial-gradient(
-    circle at 20% 30%,
-    rgba(255, 255, 255, 0.025) 0,
-    transparent 35%
-  ),
-  radial-gradient(
-    circle at 80% 70%,
-    rgba(165, 139, 99, 0.04) 0,
-    transparent 40%
-  ),
-  linear-gradient(
-    135deg,
-    #211a13,
-    #120f0c
-  );
+        linear-gradient(
+            rgba(10, 8, 6, 0.45),
+            rgba(10, 8, 6, 0.45)
+        ),
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(255, 255, 255, 0.025) 0,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(165, 139, 99, 0.04) 0,
+            transparent 40%
+        ),
+        url('/images/textures/2.webp');
 
     text-shadow:
     1px 1px 0 rgba(141, 118, 82, 0.25),
@@ -57,7 +57,16 @@
 }
 
 .navigation button:hover {
-  background: #302316;
+background:
+    linear-gradient(
+      rgba(55, 32, 18, 0.35),
+      rgba(55, 32, 18, 0.35)
+    ),
+    url('/images/textures/2.webp');
+
+  background-size: cover;
+  background-position: center;
+
   border-color: #b59a6c;
   color: #f1e6d2;
 

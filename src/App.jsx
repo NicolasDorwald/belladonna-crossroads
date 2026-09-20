@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import './button-style.css'
+import './contact-form.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -74,11 +75,11 @@ function App() {
 
                 {activeSection === 'contact' && (
                 <>
-                    <h2>Contact the Band</h2>
+                    {/* <h2>Contact the Band</h2> */}
 
                     <form
                     className="contact-form"
-                    action="https://formspree.io/f/TON_ID"
+                    action="https://formspree.io/f/xljdgblj"
                     method="POST"
                     >
                     <div className="form-group">
@@ -122,7 +123,7 @@ function App() {
                     </div>
 
                     <button type="submit" className="contact-submit">
-                        Send into the void
+                        Send to the freaks
                     </button>
                     </form>
                 </>
