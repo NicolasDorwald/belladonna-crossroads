@@ -6,167 +6,163 @@ import './contact-form.css'
 function App() {
   const [activeSection, setActiveSection] = useState('home')
 
-    const getPosition = (section) => {
-        const sections = ['home', 'media', 'merch', 'shows', 'contact']
-
-        const activeIndex = sections.indexOf(activeSection)
-        const sectionIndex = sections.indexOf(section)
-
-        const position = (sectionIndex - activeIndex + 5) % 5
-
-        return `position-${position}`
-    }
-
   return (
     <div className="site">
 
-        <header className="site-header">
-            <img src="/images/logo-isolate.png" alt="The Belladonna's Logo" className="site-logo" />
-        </header>
+      {/* LOGO */}
+        <aside className="site-logo">
+            <img
+            src="/images/bellacross-modern-psych-background-black.png"
+            alt="The Belladonna Crossroads"
+            />
+        </aside>
 
-        <div className="main-layout">
+      {/* MENU */}
+        <nav className="navigation">
+            <ul>
+                <li>
+                <button onClick={() => setActiveSection('home')}>
+                    Home
+                </button>
+                </li>
 
-            <main className="content">
+                <li>
+                <button onClick={() => setActiveSection('media')}>
+                    Unreel Medias
+                </button>
+                </li>
 
-                {activeSection === 'home' && (
-                    <>
-                    <h2>Welcome to the Crossroads</h2>
-                    <p>Stoner rock from Metz,France.</p>
-                    <p>A slow-burning blend of heavy riffs, sweaty bass, 
-                        occult beats and psychedelic haze, somewhere 
-                        between cursed crossroads, desert mirages and midnight rituals.</p>
-                    <p>Take a turn down the cursed road, where the desert heat meets 
-                        occult visions and beautifully twisted nightmares.</p>
-                    </>
-                )}
+                <li>
+                <button onClick={() => setActiveSection('merch')}>
+                    Shop' Oddities
+                </button>
+                </li>
 
-                {activeSection === 'media' && (
-                    <>
-                    <h2>Media</h2>
-                    <p>Music videos, live footage and more.</p>
-                    </>
-                )}
+                <li>
+                <button onClick={() => setActiveSection('shows')}>
+                    Meet The Freaks
+                </button>
+                </li>
 
-                {activeSection === 'merch' && (
-                    <>
-                    <h2>Merch</h2>
-                    <p>T-shirts & Records ...Coming soon.</p>
-                    </>
-                )}
-    
-                {activeSection === 'shows' && (
-                    <>
-                    <h2>Shows</h2>
-                    <p>Meet The Belladonna's.</p>
-                    <ul>
-                        <li>Wild Yann - Drums</li>
-                        <li>DeadMan Dav - Bass / Vox</li>
-                        <li>Nico Damn- Guitar / Vox</li>
-                    </ul>
-                    <p>Upcoming shows and past gigs.</p>
-                    </>
-                )}
+                <li>
+                <button onClick={() => setActiveSection('contact')}>
+                    Contact
+                </button>
+                </li>
+            </ul>
+        </nav>
 
-                {activeSection === 'contact' && (
-                <>
-                    {/* <h2>Contact the Band</h2> */}
+      {/* CONTENU */}
+      <main className="content">
 
-                    <form
-                    className="contact-form"
-                    action="https://formspree.io/f/xljdgblj"
-                    method="POST"
-                    >
-                    <div className="form-group">
-                        <label htmlFor="name">Name</label>
-                        <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        />
-                    </div>
+        {activeSection === 'home' && (
+          <>
+            
+            <h2>Stoner rock from Metz, France.</h2>
 
-                    <div className="form-group">
-                        <label htmlFor="email">Email</label>
-                        <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        />
-                    </div>
+            <p>
+              Take a turn down the cursed road:
+            </p>
 
-                    <div className="form-group">
-                        <label htmlFor="subject">Subject</label>
-                        <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        required
-                        />
-                    </div>
+            <p>
+              slow-burning blend of heavy riffs,
+            </p>
 
-                    <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required
-                        ></textarea>
-                    </div>
+            <p>
+              sweaty bass, occult beats,
+            </p>
 
-                    <button type="submit" className="contact-submit">
-                        Send to the freaks
-                    </button>
-                    </form>
-                </>
-                )}
+            <p>
+              and psychedelic midnight rituals.
+            </p>
+          </>
+        )}
 
-            </main>
+        {activeSection === 'media' && (
+          <>
+            <h2>Unreel Medias</h2>
+            <p>Music videos, live footage and more.</p>
+          </>
+        )}
 
-            <nav className="navigation">
+        {activeSection === 'merch' && (
+          <>
+            <h2>Shop' Oddities</h2>
+            <p>T-shirts & Records ...Coming soon.</p>
+          </>
+        )}
 
-                <div className="wheel">
-                    <button
-                        className={getPosition('home')}
-                        onClick={() => setActiveSection('home')}
-                        >
-                        Home
-                    </button>
+        {activeSection === 'shows' && (
+          <>
+            <h2>Meet The Freaks</h2>
 
-                    <button
-                        className={getPosition('media')}
-                        onClick={() => setActiveSection('media')}
-                        >
-                        Unreel Medias
-                    </button>
+            <ul>
+              <li>Wild Yann - Drums</li>
+              <li>DeadMan Dav - Bass / Vox</li>
+              <li>Nico Damn - Guitar / Vox</li>
+            </ul>
 
-                    <button
-                        className={getPosition('merch')}
-                        onClick={() => setActiveSection('merch')}
-                        >
-                        Shop' Oddities
-                    </button>
+            <p>Upcoming shows and past gigs.</p>
+          </>
+        )}
 
-                    <button
-                        className={getPosition('shows')}
-                        onClick={() => setActiveSection('shows')}
-                        >
-                        Meet The Freaks
-                    </button>
+        {activeSection === 'contact' && (
+          <form
+            className="contact-form"
+            action="https://formspree.io/f/xljdgblj"
+            method="POST"
+          >
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
 
-                    <button
-                        className={getPosition('contact')}
-                        onClick={() => setActiveSection('contact')}
-                        >
-                        Message
-                    </button>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
 
-                </div>
+            <div className="form-group">
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+              />
+            </div>
 
-            </nav>
-        </div>
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="contact-submit"
+            >
+              Send to the freaks
+            </button>
+          </form>
+        )}
+
+      </main>
+
     </div>
   )
 }
