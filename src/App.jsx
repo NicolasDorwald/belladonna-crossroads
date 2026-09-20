@@ -7,12 +7,12 @@ function App() {
   const [activeSection, setActiveSection] = useState('home')
 
     const getPosition = (section) => {
-        const sections = ['home', 'media', 'merch', 'band', 'shows', 'contact']
+        const sections = ['home', 'media', 'merch', 'shows', 'contact']
 
         const activeIndex = sections.indexOf(activeSection)
         const sectionIndex = sections.indexOf(section)
 
-        const position = (sectionIndex - activeIndex + 6) % 6
+        const position = (sectionIndex - activeIndex + 5) % 5
 
         return `position-${position}`
     }
@@ -53,22 +53,16 @@ function App() {
                     <p>T-shirts & Records ...Coming soon.</p>
                     </>
                 )}
-
-                {activeSection === 'band' && (
+    
+                {activeSection === 'shows' && (
                     <>
-                    <h2>The Band</h2>
+                    <h2>Shows</h2>
                     <p>Meet The Belladonna's.</p>
                     <ul>
                         <li>Wild Yann - Drums</li>
                         <li>DeadMan Dav - Bass / Vox</li>
                         <li>Nico Damn- Guitar / Vox</li>
                     </ul>
-                    </>
-                )}
-    
-                {activeSection === 'shows' && (
-                    <>
-                    <h2>Shows</h2>
                     <p>Upcoming shows and past gigs.</p>
                     </>
                 )}
@@ -156,17 +150,10 @@ function App() {
                     </button>
 
                     <button
-                        className={getPosition('band')}
-                        onClick={() => setActiveSection('band')}
-                        >
-                        Meet The Freaks
-                    </button>
-
-                    <button
                         className={getPosition('shows')}
                         onClick={() => setActiveSection('shows')}
                         >
-                        On The Road
+                        Meet The Freaks
                     </button>
 
                     <button
@@ -177,6 +164,7 @@ function App() {
                     </button>
 
                 </div>
+
             </nav>
         </div>
     </div>

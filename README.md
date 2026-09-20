@@ -334,3 +334,29 @@ belladonna-crossroads/
 │   └── main.jsx
 │
 └── ...
+
+
+## Concept de la 2e version
+
+On garde l’idée de la roue/navigation radiale comme élément graphique principal du site.
+La roue reste clairement identifiable comme une roue, mais elle n’est plus parfaitement géométrique : elle peut être légèrement désaxée, décalée ou irrégulière, avec une sensation de constellation.
+La roue contient les rubriques : HOME, MUSIC, BAND, VIDEO, LIVE, CONTACT.
+Au centre se trouve le logo / artwork carré du groupe, qui ressemble presque à une pochette d’album.
+Sur HOME, cet artwork devient le visuel principal, grand et bien visible, sans être gêné par la navigation.
+L’artwork appartient uniquement à HOME : il ne sert pas de fond permanent au site.
+Quand on clique sur une rubrique, l’artwork disparaît et le contenu de la rubrique prend sa place au centre.
+La roue reste présente autour du contenu, ce qui permet de conserver la même identité graphique et de naviguer facilement.
+Cliquer sur HOME fait revenir l’artwork central.
+L'idée générale est donc : « la roue est l’interface, le centre est le contenu. »
+L'esthétique doit rester sombre, mystérieuse, cinématographique, légèrement occulte et décadente, mais surtout élégante et design, sans tomber dans le gothique cliché, le cyberpunk ou l'interface de site classique.
+La roue peut intégrer des points, arcs fins, lignes de connexion, petites irrégularités, donnant une impression de constellation/diagramme rituel.
+Beaucoup d’espace négatif autour du centre.
+Le site doit donner davantage l'impression d'une direction artistique d'album ou de groupe musical que d'un site corporate ou d'un dashboard.
+Responsive : sur mobile, on pourra simplifier la roue et réorganiser le contenu verticalement tout en conservant l'identité graphique.
+
+Principe visuel à retenir :
+
+Une roue légèrement désaxée autour d’un centre qui change selon la rubrique.
+HOME = artwork.
+Les autres pages = contenu.
+La roue reste l’élément graphique permanent qui donne son identité au site.
