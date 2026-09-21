@@ -58,23 +58,15 @@ function App() {
         {activeSection === 'home' && (
           <>
             
-            <h2>Stoner rock from Metz, France.</h2>
+            <h2><strong>Stoner</strong> rock from <span>Metz</span>, France.</h2>
 
             <p>
-              Take a turn down cursed roads :
+                Heavy riffs. Sweaty bass. Occult beats.
+            </p>
+            <p>
+                Psychedelic rituals at the cursed crossroads.
             </p>
 
-            <p>
-              slow-burning blend of heavy riffs,
-            </p>
-
-            <p>
-              sweaty bass, occult beats,
-            </p>
-
-            <p>
-              and psychedelic midnight rituals.
-            </p>
           </>
         )}
 
