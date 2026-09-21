@@ -1,7 +1,7 @@
 .contact-form {
     width: 80%;
-    max-width: 500px;
-    margin: 1rem auto 0;
+    max-width: 340px;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:0.6rem;
@@ -14,10 +14,9 @@
 }
 
 .form-group label {
-    margin-bottom: 8px;
-    color: #b18a50;
-
-    font-family: 'Special Elite', monospace;
+    margin-bottom: 4px;
+    color: #e8dfcf;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.75rem;
     font-weight: normal;
     letter-spacing: 0.12em;
@@ -28,22 +27,17 @@
 .form-group textarea {
     width: 100%;
     box-sizing: border-box;
-
+    border-radius: 4px;
     background: rgba(8, 7, 6, 0.82);
-    border: 1px solid rgba(177, 138, 80, 0.55);
-
-    color: #d5c5a2;
-
+    border: 1px solid #65bc23a4;
+    color: #e8dfcf;
     padding: .5rem;
-
-    font-family: 'Special Elite', monospace;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.75rem;
     font-weight: normal;
     letter-spacing: 0.12em;
-    text-transform: uppercase;
-
+    /* text-transform: uppercase; */
     outline: none;
-
     transition:
         border-color 0.3s ease,
         box-shadow 0.3s ease,
@@ -58,11 +52,10 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #a95727;
+    border-color: #652391da;
     background: rgba(15, 11, 8, 0.95);
-
     box-shadow:
-        0 0 12px rgba(169, 87, 39, 0.18);
+        0 0 10px #652391da;
 }
 
 .form-group textarea {
@@ -73,19 +66,15 @@
 .contact-submit {
     display: block;
     padding: .5rem 1.5rem;
-
-    background: #a95727;
-    border: 1px solid #c8783b;
-
-    color: #090807;
-
+    background: black;
+    border: 1px solid #65bc23a4;
+    border-radius: 4px;
+    color: #e8dfcf;
     font-family: 'Special Elite', monospace;
     font-size: 0.75rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-
     cursor: pointer;
-
     transition:
         background 0.3s ease,
         box-shadow 0.3s ease,
@@ -93,10 +82,8 @@
 }
 
 .contact-submit:hover {
-    background: #c8783b;
-
-    box-shadow:
-        0 0 18px rgba(200, 120, 59, 0.25);
-
+    background: #6523913e;
+    box-shadow: 0 0 10px #6523916d;
     transform: translateY(-2px);
+    border-color: #652391da;
 }

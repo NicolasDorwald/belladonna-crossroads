@@ -46,7 +46,7 @@ function App() {
 
                 <li>
                 <button onClick={() => setActiveSection('contact')}>
-                    Contact
+                    Message
                 </button>
                 </li>
             </ul>
@@ -61,7 +61,7 @@ function App() {
             <h2>Stoner rock from Metz, France.</h2>
 
             <p>
-              Take a turn down the cursed road:
+              Take a turn down cursed roads :
             </p>
 
             <p>
@@ -82,6 +82,7 @@ function App() {
           <>
             <h2>Unreel Medias</h2>
             <p>Music videos, live footage and more.</p>
+            <p>More soon ...</p>
           </>
         )}
 
@@ -95,14 +96,13 @@ function App() {
         {activeSection === 'shows' && (
           <>
             <h2>Meet The Freaks</h2>
-
-            <ul>
+            <p>Upcoming shows and past gigs.</p>
+            {/* <ul>
               <li>Wild Yann - Drums</li>
               <li>DeadMan Dav - Bass / Vox</li>
               <li>Nico Damn - Guitar / Vox</li>
-            </ul>
+            </ul> */}
 
-            <p>Upcoming shows and past gigs.</p>
           </>
         )}
 
