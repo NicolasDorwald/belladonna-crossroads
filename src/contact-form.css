@@ -74,7 +74,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 24 24'%3E%3Cpath d='M3 2L21 12L13 14L10 22Z' fill='none' stroke='%23e8dfcf' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") 3 2, auto;
     transition:
         background 0.3s ease,
         box-shadow 0.3s ease,

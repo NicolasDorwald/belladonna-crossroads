@@ -191,7 +191,36 @@ function App() {
           </form>
         )}
 
-      </main>
+    </main>
+
+    <footer className="site-footer">
+        
+        <div className="social-links">
+
+            <a href="#" className="instagram" aria-label="Instagram">
+                <i className="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" className="facebook" aria-label="Facebook">
+            <i className="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" className="spotify" aria-label="Spotify">
+            <i className="fa-brands fa-spotify"></i>
+            </a>
+
+            <a href="#" className="bandcamp" aria-label="Bandcamp">
+            <i className="fa-brands fa-bandcamp"></i>
+            </a>
+
+            <a href="#" className="youtube" aria-label="YouTube">
+            <i className="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 The Belladonna Crossroads</p>
+    </footer>
 
     </div>
   )
