@@ -3,6 +3,8 @@ import './App.css'
 import './button-style.css'
 import './contact-form.css'
 import './shop.css'
+import './dates.css'
+import './medias.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -72,12 +74,95 @@ function App() {
         )}
 
         {activeSection === 'media' && (
-          <>
-            <h2>Unreel Medias</h2>
-            <p>Music videos, live footage and more.</p>
-            <p>More soon ...</p>
-          </>
+            <div className="media-content">
+
+                <h2>Unreel Medias</h2>
+
+                <p className="media-intro">
+                Medias, live footage, recovered transmissions.
+                </p>
+
+                <div className="media-list">
+
+                    {/* <div className="media-item">
+
+                        <div className="media-info">
+                        <h3>261005</h3>
+                        <p>Excerpt — Transmission 01</p>
+
+                        <div className="fake-player">
+                            <button className="play-button">▶</button>
+
+                            <div className="player-right">
+                            <div className="progress">
+                                <span></span>
+                            </div>
+
+                            <div className="time">
+                                <span>00:00</span>
+                                <span>03:42</span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div> */}
+
+
+                    <div className="media-item">
+
+                        <div className="media-info">
+                        <h3>Rehearsal Tape #03</h3>
+                        <p>Unreleased recording</p>
+
+                        <div className="fake-player">
+                            <button className="play-button">▶</button>
+
+                            <div className="player-right">
+                            <div className="progress">
+                                <span></span>
+                            </div>
+
+                            <div className="time">
+                                <span>00:00</span>
+                                <span>01:58</span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+
+
+                    <div className="media-item">
+
+                        <div className="media-info">
+                        <h3>She Drinks From The Skull</h3>
+                        <p>Ritual Fragment</p>
+
+                        <div className="fake-player">
+                            <button className="play-button">▶</button>
+
+                            <div className="player-right">
+                            <div className="progress">
+                                <span></span>
+                            </div>
+
+                            <div className="time">
+                                <span>00:00</span>
+                                <span>01:32</span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
         )}
+
 
         {activeSection === 'merch' && (
         <section className="shop">
@@ -124,16 +209,59 @@ function App() {
         )}
 
         {activeSection === 'shows' && (
-          <>
+        <>
+        <div className="shows-content">
             <h2>Meet The Freaks</h2>
-            <p>Upcoming shows and past gigs.</p>
-            {/* <ul>
-              <li>Wild Yann - Drums</li>
-              <li>DeadMan Dav - Bass / Vox</li>
-              <li>Nico Damn - Guitar / Vox</li>
-            </ul> */}
+            <p>Upcoming rituals and past encounters.</p>
 
-          </>
+            <div className="shows-list">
+
+                {/* Upcoming */}
+                <div className="show upcoming">
+                    <span className="show-date">12 DEC 2026</span>
+                    <span className="show-place">Winter Crossroads — Thionville</span>
+                </div>
+
+                <div className="show upcoming">
+                    <span className="show-date">21 NOV 2026</span>
+                    <span className="show-place">The Black Chapel — Luxembourg</span>
+                </div>
+
+                <div className="show upcoming">
+                    <span className="show-date">31 OCT 2026</span>
+                    <span className="show-place">Halloween Rituals — Metz</span>
+                </div>
+
+                <div className="show upcoming">
+                    <span className="show-date">17 OCT 2026</span>
+                    <span className="show-place">The 112 — Terville</span>
+                </div>
+
+                {/* Past */}
+                <div className="show past">
+                    <span className="show-date">08 AUG 2026</span>
+                    <span className="show-place">Hellfire Open Air — Moselle</span>
+                </div>
+
+                <div className="show past">
+                    <span className="show-date">21 JUN 2026</span>
+                    <span className="show-place">Fête de la Musique — Metz</span>
+                </div>
+
+                <div className="show past">
+                    <span className="show-date">23 MAY 2026</span>
+                    <span className="show-place">Desert Rituals — Thionville</span>
+                </div>
+
+                <div className="show past">
+                    <span className="show-date">18 APR 2026</span>
+                    <span className="show-place">The Gueulard Plus — Nilvange</span>
+                </div>
+
+            </div>
+
+        </div>
+        </>
         )}
 
         {activeSection === 'contact' && (
