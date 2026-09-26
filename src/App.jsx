@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import './button-style.css'
 import './contact-form.css'
+import './shop.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -12,7 +13,7 @@ function App() {
       {/* LOGO */}
         <aside className="site-logo">
             <img
-            src="/images/bellacross-modern-psych-background-black.png"
+             src={`${import.meta.env.BASE_URL}images/bellacross-modern-psych-background-black.png`}
             alt="The Belladonna Crossroads"
             />
         </aside>
@@ -79,10 +80,47 @@ function App() {
         )}
 
         {activeSection === 'merch' && (
-          <>
+        <section className="shop">
             <h2>Shop' Oddities</h2>
-            <p>T-shirts & Records ...Coming soon.</p>
-          </>
+
+            <p className="shop-contact">
+                For orders and inquiries -{' '}
+                <button onClick={() => setActiveSection('contact')}>
+                    contact the freaks
+                </button>.
+            </p>
+
+            <div className="shop-grid">
+
+                <article className="shop-item">
+                    <figure>
+                    <img
+                        src={`${import.meta.env.BASE_URL}images/merch/redwhitetshirt-logo.jpg`}
+                        alt="The Belladonna Crossroads Logo T-Shirt"
+                    />
+                    <figcaption>
+                       - Logo - T-Shirt
+                         <span>25 €</span>
+                    </figcaption>
+                    </figure>
+                </article>
+
+                <article className="shop-item">
+                    <figure>
+                    <img
+                        src={`${import.meta.env.BASE_URL}images/merch/liminal-album.jpg`}
+                        alt="Liminal album cover"
+                    />
+                    <figcaption>
+                        - Liminal - CD Album
+                        <span>15 €</span>
+                    </figcaption>
+                    </figure>
+                </article>
+
+            </div>
+
+        </section>
         )}
 
         {activeSection === 'shows' && (

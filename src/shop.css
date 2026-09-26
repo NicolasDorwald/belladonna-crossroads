@@ -1,0 +1,86 @@
+
+.shop {
+  width: 100%;
+  text-align: center;
+}
+
+.shop h2 {
+  margin-bottom: 1rem;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  width: 100%;
+  max-width: 650px;
+}
+
+.shop-item {
+  margin-top: 2rem;
+}
+
+.shop-item figure {
+  margin: 0;
+}
+
+.shop-item img {
+  display: block;
+
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+
+  margin: 0 auto;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.shop-item figcaption {
+  margin-top: 0.8rem;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #e8dfcf;
+}
+
+.shop-contact {
+  margin-top: 2.5rem;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+
+  color: #b59a6c;
+}
+
+.shop-item figcaption span {
+  display: block;
+
+  margin-top: 0.35rem;
+
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+
+  color: #8d7652;
+}
+
+
+.shop-contact button {
+  padding: 0;
+  border: none;
+  background: none;
+
+  font: inherit;
+  color: #8d7652;
+
+  cursor: pointer;
+}
+
+.shop-contact button:hover {
+  color: #e8dfcf;
+}
